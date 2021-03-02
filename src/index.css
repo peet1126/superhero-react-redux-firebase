@@ -38,3 +38,12 @@ textarea.meterialize-textarea:focus:not([readonly]) {
   border-color: #7cc78b;
   box-shadow: none;
 }
+
+#map-content {
+  height: 400px;
+  padding: 0;
+}
+
+#map {
+  height: 100%;
+}

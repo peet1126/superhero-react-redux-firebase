@@ -3,10 +3,13 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
+import MapTest from "../dashboard/MapTest"
 import moment from "moment";
 
 const ProjectDetails = props => {
   const { project, auth } = props;
+  console.log("PROPS", props);
   console.log("PROJECT", project);
   if (!auth.uid) return <Redirect to="/signin" />;
 
@@ -25,6 +28,9 @@ const ProjectDetails = props => {
             <div>{moment(project.createAt.toDate()).calendar()}</div>
           </div>
         </div>
+        <Link>
+          <MapTest project={project}/>
+        </Link>
       </div>
     );
   } else {
@@ -34,6 +40,7 @@ const ProjectDetails = props => {
 
 const mapStateToProps = (state, ownProps) => {
   // console.log(state);
+  // console.log("OWNPROPS", ownProps);
   const id = ownProps.match.params.id;
   const projects = state.firestore.data.projects;
   const project = projects ? projects[id] : null;

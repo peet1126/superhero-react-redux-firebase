@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
+import CopyMapTest from "./CopyMapTest";
 
 class Dashboard extends Component {
   render() {
@@ -20,6 +21,9 @@ class Dashboard extends Component {
           <div className="col s12 m5 offset-m1">
             <Notifications notifications={notifications}/>
           </div>
+          <div className="col s12 m5 offset-m1">
+            <CopyMapTest/>
+          </div>
         </div>
       </div>
     );
@@ -27,7 +31,7 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log(state);
+  // console.log(state);
   return {
     projects: state.firestore.ordered.projects,
     auth: state.firebase.auth,
