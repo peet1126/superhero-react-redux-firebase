@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";

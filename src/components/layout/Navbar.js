@@ -9,10 +9,10 @@ const Navbar = props => {
   // console.log(auth);
   const links = auth.uid ? <SignedInLinks profile={profile}/> : <SignedOutLinks />;
   return (
-    <nav className="nav-wrapper grey darken-3">
+    <nav className="nav-wrapper light-green darken-4">
       <div className="container">
         <Link to="/" className="brand-logo">
-          Super Hero Support Group
+          Wander
         </Link>
         {auth.isLoaded && links}
       </div>
