@@ -16,6 +16,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.top-header {
+  margin-top: 0px;
+}
+
 .project-list {
   height: 716.5px;
   overflow: -moz-scrollbars-vertical;

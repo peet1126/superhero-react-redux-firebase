@@ -1,3 +1,21 @@
+## About This App
+
+This app is a React, Redux, and Firebase project that allows the user to create a post associated with a location on a map and share it with the other logged-in members of the app.
+
+## App's Current State
+
+Currently, users can create an account, log in and log out, create a post with a title and text, and share the post with the community. There is a dashboard that displays all of the posts and a section that displays live notifications of the three most recent posts from any user. I am currently working on implementing the map features so that a user can associate their post with a particular location.
+
+## Future Plans For This App
+
+In this app, a user will be able to use their current location or click on the map to drop a pin and write a post to be associated with that pin location. Users will have profiles with a list of all of their posts and a map displaying all of the post locations. Users will be able to view each other's profiles and if they go to a user's pin location in the physical world and log into the app they will get the option to put a check next to that pin and leave a comment on that post.
+
+## Try The App
+
+Try logging in and creating a new project. A fake email will work fine. Create a new user account, then click on 'New Project' in the navigation bar to create a new post.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
